@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="images">
+    <file alias="futu_logo.png">futu.png</file>
+    <file>bbae.png</file>
+    <file>blackbull_logo.png</file>
+    <file>tiger.png</file>
+    <file>aurora_logo.png</file>
+    <file>aurora_logo_only.png</file>
+    <file>aurora_name_only.png</file>
+  </qresource>
+</RCC>

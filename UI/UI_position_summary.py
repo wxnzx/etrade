@@ -1,0 +1,111 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'UI_position_summary.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(1139, 499)
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout(Form)
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.verticalLayout_3 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_3.setObjectName("verticalLayout_3")
+        self.label_chooseAccount = QtWidgets.QLabel(Form)
+        self.label_chooseAccount.setObjectName("label_chooseAccount")
+        self.verticalLayout_3.addWidget(self.label_chooseAccount)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.account_list_widget = QtWidgets.QListWidget(Form)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Expanding)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.account_list_widget.sizePolicy().hasHeightForWidth())
+        self.account_list_widget.setSizePolicy(sizePolicy)
+        self.account_list_widget.setObjectName("account_list_widget")
+        self.horizontalLayout.addWidget(self.account_list_widget)
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.account_view = QtWidgets.QTableView(Form)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.account_view.sizePolicy().hasHeightForWidth())
+        self.account_view.setSizePolicy(sizePolicy)
+        self.account_view.setObjectName("account_view")
+        self.verticalLayout.addWidget(self.account_view)
+        self.horizontalLayout.addLayout(self.verticalLayout)
+        self.verticalLayout_3.addLayout(self.horizontalLayout)
+        self.verticalLayout_2.addLayout(self.verticalLayout_3)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label_totalAsset = QtWidgets.QLabel(Form)
+        self.label_totalAsset.setObjectName("label_totalAsset")
+        self.horizontalLayout_2.addWidget(self.label_totalAsset)
+        self.lineEdit_totalAsset = QtWidgets.QLineEdit(Form)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_totalAsset.sizePolicy().hasHeightForWidth())
+        self.lineEdit_totalAsset.setSizePolicy(sizePolicy)
+        self.lineEdit_totalAsset.setReadOnly(True)
+        self.lineEdit_totalAsset.setObjectName("lineEdit_totalAsset")
+        self.horizontalLayout_2.addWidget(self.lineEdit_totalAsset)
+        self.label_cash = QtWidgets.QLabel(Form)
+        self.label_cash.setObjectName("label_cash")
+        self.horizontalLayout_2.addWidget(self.label_cash)
+        self.lineEdit_cash = QtWidgets.QLineEdit(Form)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_cash.sizePolicy().hasHeightForWidth())
+        self.lineEdit_cash.setSizePolicy(sizePolicy)
+        self.lineEdit_cash.setReadOnly(True)
+        self.lineEdit_cash.setObjectName("lineEdit_cash")
+        self.horizontalLayout_2.addWidget(self.lineEdit_cash)
+        self.label_marketVal = QtWidgets.QLabel(Form)
+        self.label_marketVal.setObjectName("label_marketVal")
+        self.horizontalLayout_2.addWidget(self.label_marketVal)
+        self.lineEdit_marketVal = QtWidgets.QLineEdit(Form)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.lineEdit_marketVal.sizePolicy().hasHeightForWidth())
+        self.lineEdit_marketVal.setSizePolicy(sizePolicy)
+        self.lineEdit_marketVal.setStyleSheet("QLineEdit::readOnly{background:}")
+        self.lineEdit_marketVal.setReadOnly(True)
+        self.lineEdit_marketVal.setObjectName("lineEdit_marketVal")
+        self.horizontalLayout_2.addWidget(self.lineEdit_marketVal)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem)
+        self.verticalLayout_2.addLayout(self.horizontalLayout_2)
+        self.horizontalLayout_3.addLayout(self.verticalLayout_2)
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Position Summary"))
+        self.label_chooseAccount.setText(_translate("Form", "<html><head/><body><p><span style=\" font-weight:600;\">双击左侧列表选择一个账户显示</span></p></body></html>"))
+        self.label_totalAsset.setText(_translate("Form", "资产净值"))
+        self.label_cash.setText(_translate("Form", "现金"))
+        self.label_marketVal.setText(_translate("Form", "持仓市值"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_Form()
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec_())
+

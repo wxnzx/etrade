@@ -1,0 +1,14 @@
+*.pyc
+*.dll
+*.sql
+*.csv
+*.env
+test.*
+*.html
+*.ipynb
+layout.json
+log.txt
+temp
+**/__pycache__
+.idea/
+.vscode

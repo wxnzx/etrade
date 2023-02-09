@@ -1,0 +1,11 @@
+TIME_OUT = 5
+BASE = "https://api.etrade.com"
+List_Accounts = "/v1/accounts/list"
+balance_asset = "/v1/accounts/{accountIdKey}/balance.json"
+Portfolio = "/v1/accounts/{accountIdKey}/portfolio.json"
+PreviewOrder = "/v1/accounts/{accountIdKey}/orders/preview.json"
+PlaceOrder = "/v1/accounts/{accountIdKey}/orders/place.json"
+Check_order = "/v1/accounts/{accountIdKey}/orders.json"
+Change_PreviewOrder = "/v1/accounts/{accountIdKey}/orders/{orderId}/change/preview"
+Change_PlaceOrder = "/v1/accounts/{accountIdKey}/orders/{orderId}/change/place"
+Cancel_order = "/v1/accounts/{accountIdKey}/orders/cancel"
